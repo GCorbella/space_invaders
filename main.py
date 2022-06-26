@@ -58,6 +58,7 @@ text_y = 10
 # Endgame Text
 end_font = pygame.font.Font("freesansbold.ttf", 40)
 
+
 # Function Score
 def show_score(x, y):
     text = font.render(f"Score: {score}", True, (255, 255, 255))
@@ -93,7 +94,7 @@ def collision(x_1, y_1, x_2, y_2):
 # Endgame Function
 def final_text():
     final_font = end_font.render("GAME ENDED", True, (255, 255, 255))
-    screen.blit(final_font, (250,200))
+    screen.blit(final_font, (250, 200))
 
 
 # Game loop
